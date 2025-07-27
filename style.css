@@ -1,0 +1,238 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #e0f7fa;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  text-align: center;
+  background: #00796b;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ✅ Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+  margin-top: 2rem;
+}
+
+/* ✅ Homepage Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project img.thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project img.thumb:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.project h3 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ✅ Thumbnail sizing */
+.thumb {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ✅ Print Project Grids */
+.print-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.print-item {
+  text-align: center;
+}
+
+.print-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.print-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.print-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ✅ Rug Projects Layout */
+.rug-section {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.rug-section .moodboard {
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.rug-section .final-design-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  justify-items: center;
+}
+
+.rug-section .final-design-grid img {
+  max-width: 70%;
+  border-radius: 8px;
+}
+
+/* ✅ Special layouts */
+.print-grid.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.print-grid.one-col img {
+  max-width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.print-grid.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.print-grid.two-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ✅ Moodboard & Concept Image (Same Size) */
+.moodboard,
+.concept-note {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px; /* SAME size for both */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ✅ Section Titles */
+h2, .section-title {
+  text-align: left;
+  margin: 20px 0 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ✅ Project Sections (inner pages) */
+.project-section {
+  margin: 40px 20px;
+  text-align: left;
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* ✅ Final Design: single column */
+.final-design-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.final-design-grid img {
+  width: 70%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.final-design-grid p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #555;
+}
+
+/* ✅ About Section */
+.about-section {
+  text-align: center;
+  padding: 60px 20px;
+  color: #4a4a4a;
+}
+
+.about-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-photo {
+  width: 280px;  /* Increased photo size */
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.abo

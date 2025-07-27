@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shristi's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ✅ Dropdown Menu Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00796b;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #004d40;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Shristi Deep</h1>
+    <p>Textile Designer | Creative Thinker</p>
+  </header>
+
+  <!-- ✅ Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <a href="#projects" class="dropbtn">Projects ▾</a>
+      <div class="dropdown-content">
+        <a href="#woven-projects">Woven Projects</a>
+        <a href="#print-projects">Print Projects</a>
+        <a href="#rug-projects">Rug Design</a>
+      </div>
+    </div>
+    <a href="#contact">Contact</a>
+  </nav>
+
+ <section id="about" class="about-section">
+  <div class="about-container">
+    <img src="images/your-photo.jpg" alt="Shristi Deep" class="about-photo" />
+    <p>
+      I’m a textile designer passionate about creating functional and visually engaging textiles. 
+      I specialize in woven and printed designs, exploring color, texture, and patterns to craft unique stories.
+    </p>
+    <p>
+      I hold an AAS in Textile Design from FIT, New York, and am completing my Bachelor’s at NIFT, India. 
+      My experience spans trend research, weave development, surface techniques, and digital design tools, 
+      with a focus on making innovative, market-ready textiles.
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- ✅ Woven Projects (Moved Above Print) -->
+    <div class="sub-section" id="woven-projects">
+      <h3>Woven Projects</h3>
+      <div class="project-grid">
+        <div class="project">
+          <a href="natures-stone.html">
+            <img src="images/natures-stone-thumb.jpg" alt="Nature's Stone" class="thumb" />
+            <h4>Nature's Stone</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="weathered-elegance.html">
+            <img src="images/weathered-elegance-thumb.jpg" alt="Weathered Elegance" class="thumb" />
+            <h4>Weathered Elegance</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="aqua-morphosis.html">
+            <img src="images/aqua-morphosis-thumb.jpg" alt="Aqua Morphosis" class="thumb" />
+            <h4>Aqua Morphosis</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Print Projects -->
+    <div class="sub-section" id="print-projects">
+      <h3>Print Projects</h3>
+      <div class="project-grid">
+        <div class="project">
+          <a href="structural-chaos.html">
+            <img src="images/structural-chaos-thumb.jpg" alt="Structural Chaos" class="thumb" />
+            <h4>Structural Chaos</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="pansys-alternative-world.html">
+            <img src="images/pansys-alternative-world-thumb.jpg" alt="Pansys Alternative World" class="thumb" />
+            <h4>Pansys Alternative World</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="humming-glory.html">
+            <img src="images/humming-glory-thumb.jpg" alt="Humming Glory" class="thumb" />
+            <h4>The Humming Glory</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="soft-grip.html">
+            <img src="images/soft-grip-thumb.jpg" alt="Soft Grip" class="thumb" />
+            <h4>Soft Grip</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="rooh.html">
+            <img src="images/rooh-thumb.jpg" alt="Rooh" class="thumb" />
+            <h4>Rooh</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="endangered-beauty.html">
+            <img src="images/endangered-beauty-thumb.jpg" alt="Endangered Beauty" class="thumb" />
+            <h4>Endangered Beauty</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="mystic-mushroom.html">
+            <img src="images/mystic-mushroom-thumb.jpg" alt="Mystic Mushroom" class="thumb" />
+            <h4>Mystic Mushroom</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="midnight-summer.html">
+            <img src="images/midnight-summer-thumb.jpg" alt="Midnight Summer" class="thumb" />
+            <h4>Midnight Summer</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Rug Design Projects -->
+    <div class="sub-section" id="rug-projects">
+      <h3>Rug Design</h3>
+      <div class="project-grid">
+
+        <div class="project">
+          <a href="chaap.html">
+            <img src="images/chaap-thumb.jpg" alt="CHAAP" class="thumb" />
+            <h4>CHAAP</h4>
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="textile-sonata.html">
+            <img src="images/textile-sonata-thumb.jpg" alt="Textile Sonata" class="thumb" />
+            <h4>Textile Sonata</h4>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shristideep22@gmail.com">shristideep22@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shristi-deep-90670432a" target="_blank">Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Shristi Deep</p>
+  </footer>
+</body>
+</html>
