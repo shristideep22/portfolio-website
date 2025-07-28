@@ -30,7 +30,6 @@ section {
   margin: auto;
 }
 
-/* ✅ Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -41,7 +40,7 @@ footer {
 /* ✅ Homepage Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 10px;
   padding: 0 10px;
@@ -70,10 +69,9 @@ footer {
   color: #333;
 }
 
-/* ✅ Thumbnail sizing */
 .thumb {
-  width: 320px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -133,7 +131,7 @@ footer {
   border-radius: 8px;
 }
 
-/* ✅ Special layouts */
+/* ✅ Special Layouts */
 .print-grid.one-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -149,7 +147,7 @@ footer {
 
 .print-grid.two-col {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
@@ -161,13 +159,13 @@ footer {
   border-radius: 4px;
 }
 
-/* ✅ Moodboard & Concept Image (Same Size) */
+/* ✅ Moodboard & Concept Note */
 .moodboard,
 .concept-note {
   display: block;
   margin: 20px auto;
   width: 100%;
-  max-width: 500px; /* SAME size for both */
+  max-width: 500px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
@@ -182,7 +180,7 @@ h2, .section-title {
   color: #333;
 }
 
-/* ✅ Project Sections (inner pages) */
+/* ✅ Project Sections (Inner Pages) */
 .project-section {
   margin: 40px 20px;
   text-align: left;
@@ -194,7 +192,7 @@ h2, .section-title {
   text-align: left;
 }
 
-/* ✅ Final Design: single column */
+/* ✅ Final Design: Single Column */
 .final-design-grid {
   display: flex;
   flex-direction: column;
@@ -228,11 +226,39 @@ h2, .section-title {
 }
 
 .about-photo {
-  width: 280px;  /* Increased photo size */
+  width: 280px;
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.abo
+/* ✅ Responsive Tweaks */
+@media (max-width: 768px) {
+  header, nav, section, footer {
+    padding: 1rem;
+  }
+
+  h2, .section-title {
+    font-size: 22px;
+  }
+
+  .about-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .final-design-grid img {
+    width: 90%;
+  }
+
+  .moodboard,
+  .concept-note {
+    max-width: 90%;
+  }
+
+  .print-grid.one-col img,
+  .print-grid.two-col img {
+    max-width: 100%;
+  }
+}
