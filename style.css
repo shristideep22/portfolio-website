@@ -297,4 +297,18 @@ h2, .section-title {
     grid-template-columns: 1fr;
   }
 }
+/* Default: 3 columns (for desktop/tablet) */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* For mobile screens only: 2 columns */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
