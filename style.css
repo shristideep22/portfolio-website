@@ -257,6 +257,12 @@ h2, .section-title {
     max-width: 90%;
   }
 
+ .theme,
+  .concept-note {
+    max-width: 90%;
+  }
+
+
   .print-grid.one-col img,
   .print-grid.two-col img {
     max-width: 100%;
