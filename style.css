@@ -183,3 +183,26 @@ footer {
     width: 90%;
   }
 }
+/* Header for project pages */
+.project-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: #e0f7fa;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.project-header p {
+  margin: 5px 0 10px;
+  color: #555;
+}
+
+.project-header a {
+  text-decoration: none;
+  color: #00796b;
+  font-size: 14px;
+}
