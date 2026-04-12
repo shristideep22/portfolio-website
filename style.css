@@ -1,3 +1,7 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -38,7 +42,7 @@ footer {
 }
 
 /* ========================= */
-/* PROJECT GRID (CLEAN FIX) */
+/* PROJECT GRID (HOMEPAGE) */
 /* ========================= */
 
 .project-grid {
@@ -127,19 +131,6 @@ footer {
 }
 
 /* ========================= */
-/* MOODBOARD + CONCEPT */
-/* ========================= */
-
-.moodboard,
-.concept-note {
-  display: block;
-  margin: 20px auto;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-}
-
-/* ========================= */
 /* ABOUT */
 /* ========================= */
 
@@ -159,6 +150,70 @@ footer {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+}
+
+/* ========================= */
+/* PROJECT PAGE (MOSSBORNE FIX) */
+/* ========================= */
+
+.project-page {
+  max-width: 700px;   /* 🔥 controls width */
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.project-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: #e0f7fa;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.project-header p {
+  margin: 5px 0 10px;
+  color: #555;
+}
+
+.project-header a {
+  text-decoration: none;
+  color: #00796b;
+  font-size: 14px;
+}
+
+/* Centered images (moodboard, concept, final) */
+.center-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;   /* 🔥 smaller = cleaner */
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Text block */
+.text-block {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Pattern grid */
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;   /* 🔥 prevents stretching */
+  margin: 20px auto;
+}
+
+.pattern-grid img {
+  width: 100%;
+  border-radius: 6px;
 }
 
 /* ========================= */
@@ -182,27 +237,12 @@ footer {
   .final-design-grid img {
     width: 90%;
   }
-}
-/* Header for project pages */
-.project-header {
-  text-align: center;
-  padding: 60px 20px 30px;
-  background: #e0f7fa;
-}
 
-.project-header h1 {
-  margin: 0;
-  font-size: 32px;
-  letter-spacing: 2px;
-}
+  .pattern-grid {
+    grid-template-columns: 1fr;
+  }
 
-.project-header p {
-  margin: 5px 0 10px;
-  color: #555;
-}
-
-.project-header a {
-  text-decoration: none;
-  color: #00796b;
-  font-size: 14px;
+  .center-img {
+    max-width: 90%;
+  }
 }
