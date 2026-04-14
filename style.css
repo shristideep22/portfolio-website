@@ -270,9 +270,14 @@ footer {
   }
 }
 .caption {
+  max-width: 600px;       /* same width as images */
+  margin: 10px auto 30px; /* centers it perfectly */
   text-align: center;
-  font-size: 14px;
-  color: #666;
-  margin-top: 10px;
-  margin-bottom: 30px;
+
+  font-size: 13px;
+  font-weight: bold;      /* 🔥 bold */
+  text-transform: uppercase; /* 🔥 ALL CAPS */
+
+  color: #555;
+  letter-spacing: 1px;    /* 🔥 gives that premium feel */
 }
