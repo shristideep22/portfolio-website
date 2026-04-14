@@ -58,6 +58,8 @@ footer {
 
 .project img.thumb {
   width: 100%;
+  height: 250px;            /* consistent thumbnails */
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -153,11 +155,11 @@ footer {
 }
 
 /* ========================= */
-/* PROJECT PAGE (MOSSBORNE FIX) */
+/* PROJECT PAGE */
 /* ========================= */
 
 .project-page {
-  max-width: 700px;   /* 🔥 controls width */
+  max-width: 700px;
   margin: auto;
   padding: 40px 20px;
 }
@@ -185,35 +187,56 @@ footer {
   font-size: 14px;
 }
 
-/* Centered images (moodboard, concept, final) */
+/* Centered images */
 .center-img {
   display: block;
   margin: 20px auto;
-  max-width: 400px;   /* 🔥 smaller = cleaner */
+  max-width: 400px;
   width: 100%;
   border-radius: 8px;
 }
 
-/* Text block */
+/* Text */
 .text-block {
   max-width: 600px;
-  margin: 10px auto 30px;
+  margin: 10px auto 25px;
   line-height: 1.6;
   text-align: center;
+  color: #555;
 }
 
-/* Pattern grid */
+/* ========================= */
+/* PATTERN GRID (DEFAULT = 2 COL) */
+/* ========================= */
+
 .pattern-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  max-width: 600px;   /* 🔥 prevents stretching */
+  max-width: 600px;
   margin: 20px auto;
 }
 
 .pattern-grid img {
   width: 100%;
   border-radius: 6px;
+}
+
+/* ========================= */
+/* INTERNSHIP FIX (1 COLUMN) */
+/* ========================= */
+
+.pattern-grid.one-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.pattern-grid.one-col img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* ========================= */
@@ -245,12 +268,4 @@ footer {
   .center-img {
     max-width: 90%;
   }
-}
-.project img.thumb {
-  width: 100%;
-  height: 250px;            /* 🔥 fixed height */
-  object-fit: cover;        /* 🔥 crops nicely */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
