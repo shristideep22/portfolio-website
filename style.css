@@ -269,3 +269,10 @@ footer {
     max-width: 90%;
   }
 }
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
