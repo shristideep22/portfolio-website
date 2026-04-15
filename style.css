@@ -101,18 +101,6 @@ footer {
 }
 
 /* ========================= */
-/* 🔥 MOODBOARD FIX (MAIN FIX) */
-/* ========================= */
-
-.moodboard {
-  display: block;
-  margin: 20px auto;
-  max-width: 420px;   /* 🔥 controls size */
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* ========================= */
 /* RUG SECTION */
 /* ========================= */
 
@@ -297,8 +285,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .center-img,
-  .moodboard {
+  .center-img {
     max-width: 90%;
   }
+}
+
+/* ========================= */
+/* 🔥 FINAL SAFE FIX (DO NOT TOUCH) */
+/* ========================= */
+
+.project-page .center-img {
+  max-width: 420px !important;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
 }
