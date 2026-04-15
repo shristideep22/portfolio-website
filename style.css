@@ -58,7 +58,7 @@ footer {
 
 .project img.thumb {
   width: 100%;
-  height: 250px;            /* consistent thumbnails */
+  height: 250px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -100,9 +100,16 @@ footer {
   transform: scale(1.03);
 }
 
-.print-item p {
-  margin-top: 8px;
-  font-size: 1rem;
+/* ========================= */
+/* 🔥 MOODBOARD FIX (MAIN FIX) */
+/* ========================= */
+
+.moodboard {
+  display: block;
+  margin: 20px auto;
+  max-width: 420px;   /* 🔥 controls size */
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* ========================= */
@@ -118,6 +125,10 @@ footer {
   max-width: 400px;
   margin-bottom: 30px;
 }
+
+/* ========================= */
+/* FINAL DESIGN GRID */
+/* ========================= */
 
 .final-design-grid {
   display: flex;
@@ -187,7 +198,10 @@ footer {
   font-size: 14px;
 }
 
-/* Centered images */
+/* ========================= */
+/* CENTERED IMAGES */
+/* ========================= */
+
 .center-img {
   display: block;
   margin: 20px auto;
@@ -196,7 +210,10 @@ footer {
   border-radius: 8px;
 }
 
-/* Text */
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
 .text-block {
   max-width: 600px;
   margin: 10px auto 25px;
@@ -206,7 +223,7 @@ footer {
 }
 
 /* ========================= */
-/* PATTERN GRID (DEFAULT = 2 COL) */
+/* PATTERN GRID */
 /* ========================= */
 
 .pattern-grid {
@@ -223,7 +240,7 @@ footer {
 }
 
 /* ========================= */
-/* INTERNSHIP FIX (1 COLUMN) */
+/* INTERNSHIP FIX */
 /* ========================= */
 
 .pattern-grid.one-col {
@@ -237,6 +254,21 @@ footer {
 .pattern-grid.one-col img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* ========================= */
+/* CAPTION */
+/* ========================= */
+
+.caption {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+  letter-spacing: 1px;
 }
 
 /* ========================= */
@@ -265,19 +297,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .center-img {
+  .center-img,
+  .moodboard {
     max-width: 90%;
   }
-}
-.caption {
-  max-width: 600px;       /* same width as images */
-  margin: 10px auto 30px; /* centers it perfectly */
-  text-align: center;
-
-  font-size: 13px;
-  font-weight: bold;      /* 🔥 bold */
-  text-transform: uppercase; /* 🔥 ALL CAPS */
-
-  color: #555;
-  letter-spacing: 1px;    /* 🔥 gives that premium feel */
 }
