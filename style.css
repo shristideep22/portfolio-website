@@ -300,3 +300,15 @@ footer {
   display: block;
   margin: 20px auto;
 }
+
+/* ========================= */
+/* 🔥 FINAL REAL FIX */
+/* ========================= */
+
+.project-page img {
+  max-width: 420px !important;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
